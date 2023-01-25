@@ -23,3 +23,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ### Task: Add Schematics - Navigation
 
 1. Run 'ng generate @angular/material:navigation nav'
+
+### Task: Add Schematics - Dashboard
+
+1. Run 'ng g @angular/material:dashboard home'
+2. Add routing to Home Page and Search Page
