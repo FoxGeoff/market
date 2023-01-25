@@ -28,3 +28,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 1. Run 'ng g @angular/material:dashboard home'
 2. Add routing to Home Page and Search Page
+
+### Kanban Task: Express Server Intergration
+
+1. Video Ref <https://www.youtube.com/watch?v=dT1ID4q57fs>
+2. How to 'Microservices'
+
+### Task Install Express
+
+
