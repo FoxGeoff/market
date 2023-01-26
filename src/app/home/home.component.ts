@@ -52,5 +52,9 @@ export class HomeComponent {
   loadCards() {
     this.cards = this.isHandset ? this.cardsForHandset : this.cardsForweb
   }
+
+  getImage(imageName: string): string {
+    return 'url(' + 'http://localhost:3000/images/' + imageName + '.jpg' + ')';
+  }
 }
 

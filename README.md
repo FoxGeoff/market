@@ -137,3 +137,9 @@ export class HomeComponent {
 2. Check: httpClient is imported in app.module.ts
 3. Check: Cross site error (CORS)
 4. On Server backend run 'npm i cors'
+
+### Task: Style the card
+
+```html
+<mat-card class="dashboard-card" [style.background-image]="getImage(card.imageName)">
+```
