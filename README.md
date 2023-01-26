@@ -29,7 +29,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 1. Run 'ng g @angular/material:dashboard home'
 2. Add routing to Home Page and Search Page
 
-### Kanban Task: Express Server Intergration
+## Kanban Task: Express Server Intergration
 
 1. Video Ref <https://www.youtube.com/watch?v=dT1ID4q57fs>
 2. How to 'Microservices'
@@ -43,3 +43,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 5. Open 'localhost:3000'
 6. Run 'npm nodemon'
 7. Run 'nodemn app.js'
+
+### Task: Add route /deals (app.js)
+
+1. code: app.use('/deals', dealsRouter); (app.js)
+2. code: var dealsRouter = require('./routes/deals');
+3. change: routes/users.js > routes/deals.js
