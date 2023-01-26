@@ -134,3 +134,6 @@ export class HomeComponent {
 ### Task: Add an Angular Service
 
 1. file: app.service.ts
+2. Check: httpClient is imported in app.module.ts
+3. Check: Cross site error (CORS)
+4. On Server backend run 'npm i cors'
