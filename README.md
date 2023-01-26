@@ -130,3 +130,7 @@ export class HomeComponent {
   }
 }
 ```
+
+### Task: Add an Angular Service
+
+1. file: app.service.ts
