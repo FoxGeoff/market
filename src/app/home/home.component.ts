@@ -3,6 +3,7 @@ import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { AppService } from '../app.service';
+import { Card } from '../Card';
 
 @Component({
   selector: 'app-home',
@@ -11,9 +12,9 @@ import { AppService } from '../app.service';
 })
 export class HomeComponent {
   /** Based on the screen size, switch from standard to one column per row */
-  cards = [];
-  cardsForHandset = [];
-  cardsForweb = [];
+  cards:Card[] = [];
+  cardsForHandset:Card[] = [];
+  cardsForweb:Card[] = [];
 
   isHandset: boolean = false;
   isHandsetObserver: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
