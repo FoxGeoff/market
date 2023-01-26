@@ -50,6 +50,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ### Task: Add route /deals (app.js)
 
-1. code: app.use('/deals', dealsRouter); (app.js)
-2. code: var dealsRouter = require('./routes/deals');
-3. change: routes/users.js > routes/deals.js
+1. change code: app.use('/deals', dealsRouter); //app.js
+2. change code: var dealsRouter = require('./routes/deals'); //app.js
+3. change file: routes/users.js > routes/deals.js
+4. [short cut F2 to rename file]
