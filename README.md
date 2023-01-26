@@ -44,6 +44,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 6. Run 'npm install --save-dev nodemon'
 7. Run 'nodemon .bin/www' OR 'npm run n-start'
 
+```typescript
+[nodemon] starting `node ./bin/www .bin/www`
+```
+
 ### Task: Add route /deals (app.js)
 
 1. code: app.use('/deals', dealsRouter); (app.js)
