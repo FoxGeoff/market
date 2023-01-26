@@ -41,8 +41,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 3. Run 'cd market-service'and npm install'
 4. Run 'market-service/npm start app.js'
 5. Open 'localhost:3000'
-6. Run 'npm nodemon'
-7. Run 'nodemn app.js'
+6. Run 'npm install --save-dev nodemon'
+7. Run 'nodemon .bin/www' OR 'npm run n-start'
 
 ### Task: Add route /deals (app.js)
 
