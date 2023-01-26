@@ -42,7 +42,9 @@ export class HomeComponent {
         this.cardsForweb = responce.webCards;
         this.loadCards();
       },
-      error => {alert("error app service")}
+      error => {
+        alert("There was an  in recieving data from the server.Please try again later!")
+      }
     );
   }
 
