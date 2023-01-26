@@ -3,7 +3,7 @@ import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { AppService } from '../app.service';
-import { Card } from '../Card';
+import { Card } from '../card';
 
 @Component({
   selector: 'app-home',
