@@ -54,3 +54,79 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 2. change code: var dealsRouter = require('./routes/deals'); //app.js
 3. change file: routes/users.js > routes/deals.js
 4. [short cut F2 to rename file]
+
+### Task: Send data from server (JSON OBJ)
+
+1. Update deals.js
+
+```Javascript
+/* GET deals listing. */
+router.get('/', function(req, res, next) {
+  let jsonResponce = {
+    "handsetCards": [
+      { title: 'Card 1', cols: 2, rows: 1 },
+      { title: 'Card 2', cols: 2, rows: 1 },
+      { title: 'Card 3', cols: 2, rows: 1 },
+      { title: 'Card 4', cols: 2, rows: 1 }
+    ],
+    "webCards": [
+      { title: 'Card 1', cols: 2, rows: 1 },
+      { title: 'Card 2', cols: 1, rows: 1 },
+      { title: 'Card 3', cols: 1, rows: 2 },
+      { title: 'Card 4', cols: 1, rows: 1 }
+    ]
+  };
+  res.json(jsonResponce);
+});
+```
+
+```json
+{
+  "handsetCards": [
+    { "title": "Card 1", "cols": 2, "rows": 1 },
+    { "title": "Card 2", "cols": 2, "rows": 1 },
+    { "title": "Card 3", "cols": 2, "rows": 1 },
+    { "title": "Card 4", "cols": 2, "rows": 1 }
+  ],
+  "webCards": [
+    { "title": "Card 1", "cols": 2, "rows": 1 },
+    { "title": "Card 2", "cols": 1, "rows": 1 },
+    { "title": "Card 3", "cols": 1, "rows": 2 },
+    { "title": "Card 4", "cols": 1, "rows": 1 }
+  ]
+}
+```
+
+```typescript
+// home.component.ts
+
+export class HomeComponent {
+  /** Based on the screen size, switch from standard to one column per row */
+  cards = [];
+  cardForHandset = [];
+  cardsForweb = [];
+
+  isHandset: boolean = false;
+  isHandsetObserver: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(({ matches }) => {
+      if (matches) {
+        return true;
+      }
+      return false;
+    })
+  );
+
+  constructor(private breakpointObserver: BreakpointObserver) { }
+
+  ngOnInit() {
+    this.isHandsetObserver.subscribe(currentObserverValue => {
+      this.isHandset = currentObserverValue;
+      this.loadCards();
+    })
+  }
+
+  loadCards() {
+    this.cards = this.isHandset ? this.cardForHandset : this.cardsForweb
+  }
+}
+```
