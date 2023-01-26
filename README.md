@@ -39,7 +39,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 1. Run 'npm i -g express-generator'
 2. Run 'express market-service'
 3. Run 'cd market-service'and npm install'
-4. Run 'market-service/start app.js'
+4. Run 'market-service/npm start app.js'
 5. Open 'localhost:3000'
 6. Run 'npm nodemon'
 7. Run 'nodemn app.js'
