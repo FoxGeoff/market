@@ -143,3 +143,15 @@ export class HomeComponent {
 ```html
 <mat-card class="dashboard-card" [style.background-image]="getImage(card.imageName)">
 ```
+
+## Kanband Task: Stylized custom notification in Angular [#4] | Snackbar component of Material library | Multi-color
+
+1. Video Ref: <https://www.youtube.com/watch?v=gO8rL5iXk-Y>
+
+### Task: Add Snackbar Notification
+
+...
+
+## Kanban Task: Add MongoDB database
+
+1.Video Ref: <https://www.youtube.com/watch?v=u76N3HFTBX8>
