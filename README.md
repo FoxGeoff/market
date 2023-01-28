@@ -154,4 +154,44 @@ export class HomeComponent {
 
 ## Kanban Task: Add MongoDB database
 
-1.Video Ref: <https://www.youtube.com/watch?v=u76N3HFTBX8>
+1. Video Ref: <https://www.youtube.com/watch?v=u76N3HFTBX8>
+2. Use app Mongodb Compass to connect to DB
+3. Using Compass create: DB: market and Collection: deals
+4. Import Data into deals collection
+5. Add folder market-db/insert_deals_ref.json
+
+```json
+[
+  {
+    "imageName": "food1",
+    "title": "10% off with coupon",
+    "handsetCols":0,
+    "webCols": 0,
+    "webRows": 0
+  },
+  {
+    "imageName": "food2",
+    "title": "Flash Sale on Food",
+    "handsetCols":2,
+    "handseyRows":1,
+    "webCols": 2,
+    "webRows": 1
+  },
+  {
+    "imageName": "food3",
+    "title": "5% discount for delivery",
+    "handsetCols":2,
+    "handseyRows":1,
+    "webCols": 2,
+    "webRows": 1
+  },
+  {
+    "imageName": "food4",
+    "title": "$5 Coupon use '5off' code",
+    "handsetCols":2,
+    "handseyRows":1,
+    "webCols": 2,
+    "webRows": 1
+  }
+]
+```
