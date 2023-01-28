@@ -44,7 +44,7 @@ export class HomeComponent {
         this.loadCards();
       },
       error => {
-        alert("There was an  in recieving data from the server.Please try again later!")
+        alert("There was an error in recieving data from the server.Please try again later!")
       }
     );
   }

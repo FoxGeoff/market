@@ -195,3 +195,8 @@ export class HomeComponent {
   }
 ]
 ```
+
+Task: Update the 'routes/deals.js' code
+
+1. Create DAL: "market-service\public\javascripts\DbAbstractionLayer.js"
+2. Run 'npm i mongodb' @ DAL path
