@@ -213,3 +213,5 @@ Task: Setup MongoDb enviroment path
 5. Type 'mongod -version' in cmd @ c:uses/foxge/mongod -version
 6. Type 'mongod' to start demon ( cmd win + R)
 7. check in Compass: 'mongodb://localhost:27017'
+
+## Market App: Angular => Express => MongoDB DONE
