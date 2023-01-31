@@ -38,8 +38,9 @@ router.get("/", function (req, res, next) {
     .queryDealsCollection()
     .then((response) => {
       res.json(response);
-    }).catch((error) => {
-       res.status(500).json({});
+    })
+    .catch((error) => {
+      res.status(500).json({});
     });
 });
 

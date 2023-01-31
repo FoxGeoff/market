@@ -19,7 +19,7 @@ async function queryDealsCollection() {
   if (connected) {
     let jsonResponse = {
       handsetCards: [],
-      wibCards: [],
+      webCards: [],
     };
 
     const dealsCollectionArray = await db.collection("DEALS").find().toArray();
@@ -37,7 +37,7 @@ async function queryDealsCollection() {
       webElement["title"] = elm["title"];
       webElement["rows"] = elm["webRows"];
       webElement["cols"] = elm["webCols"];
-      jsonResponse.handsetCards.push(webElement);
+      jsonResponse.webCards.push(webElement);
     });
 
     return jsonResponse;
