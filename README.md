@@ -156,7 +156,7 @@ export class HomeComponent {
 
 1. Video Ref: <https://www.youtube.com/watch?v=u76N3HFTBX8>
 2. Use app Mongodb Compass to connect to DB
-3. Using Compass create: DB: market and Collection: deals
+3. Using Compass create: DB: market and Collection: DEALS
 4. Import Data into deals collection
 5. Add folder market-db/insert_deals_ref.json
 
@@ -166,6 +166,7 @@ export class HomeComponent {
     "imageName": "food1",
     "title": "10% off with coupon",
     "handsetCols":0,
+    "handsetRows":0,
     "webCols": 0,
     "webRows": 0
   },
@@ -173,7 +174,7 @@ export class HomeComponent {
     "imageName": "food2",
     "title": "Flash Sale on Food",
     "handsetCols":2,
-    "handseyRows":1,
+    "handsetRows":1,
     "webCols": 2,
     "webRows": 1
   },
@@ -181,7 +182,7 @@ export class HomeComponent {
     "imageName": "food3",
     "title": "5% discount for delivery",
     "handsetCols":2,
-    "handseyRows":1,
+    "handsetRows":1,
     "webCols": 2,
     "webRows": 1
   },
@@ -189,7 +190,7 @@ export class HomeComponent {
     "imageName": "food4",
     "title": "$5 Coupon use '5off' code",
     "handsetCols":2,
-    "handseyRows":1,
+    "handsetRows":1,
     "webCols": 2,
     "webRows": 1
   }
@@ -200,3 +201,15 @@ Task: Update the 'routes/deals.js' code
 
 1. Create DAL: "market-service\public\javascripts\DbAbstractionLayer.js"
 2. Run 'npm i mongodb' @ DAL path
+
+Task: Install MongoDB Community Server
+
+Task: Setup MongoDb enviroment path
+
+1. Get path: 'C:\Program Files\MongoDB\Server\6.0\bin'
+2. Edit system environment variable and add to 'path'
+3. Add to PATH the new MonogoDB address
+4. Default: 'C:\data\db'
+5. Type 'mongod -version' in cmd @ c:uses/foxge/mongod -version
+6. Type 'mongod' to start demon ( cmd win + R)
+7. check in Compass: 'mongodb://localhost:27017'
