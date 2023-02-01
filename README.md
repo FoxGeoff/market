@@ -239,4 +239,59 @@ Task: Setup MongoDb enviroment path
 ## Kanban Task: HTTP Interceptor + Material Progress Loader
 
 1. Video Ref <https://www.youtube.com/watch?v=o12iI18l1wI>
-2. Add mat progress spinner
+2. Add mat progress bar
+
+### Task: Add http Intercepter
+
+1. Add loader Service File
+2. Add intercepter Service File
+
+```Typescript
+//interceptor.service
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { finalize, Observable } from 'rxjs';
+import { LoaderService } from './loader.service';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class InterceptorService implements HttpInterceptor {
+
+  constructor(public loaderService: LoaderService) { }
+
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    this.loaderService.isloading.next(true);
+
+    return next.handle(req).pipe(
+      finalize(
+        () => {
+          this.loaderService.isloading.next(false);
+        }
+      )
+    )
+  }
+}
+
+//app.module.ts
+ ...
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}
+  ],
+  ...
+
+//loader.service.ts
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class LoaderService {
+
+  public isloading: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+
+  constructor() { }
+}
+```
+

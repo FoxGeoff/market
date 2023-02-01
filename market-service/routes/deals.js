@@ -30,18 +30,22 @@ router.get("/", function (req, res, next) {
    * ...
    * }, 100);
    *
-   * //change 100(in miliseconds, 1000ms == 1sec) for testing!
+   * //change 3000(in miliseconds, 1000ms == 1sec) for testing!
    *
    **/
 
-  dbAbstractionLayer
-    .queryDealsCollection()
-    .then((response) => {
-      res.json(response);
-    })
-    .catch((error) => {
-      res.status(500).json({});
-    });
+  setTimeout(() => {
+
+    dbAbstractionLayer
+      .queryDealsCollection()
+      .then((response) => {
+        res.json(response);
+      })
+      .catch((error) => {
+        res.status(500).json({});
+      });
+
+  }, 3000);
 });
 
 //create a database abstration layer (DAL)
