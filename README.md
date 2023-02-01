@@ -224,3 +224,14 @@ Task: Setup MongoDb enviroment path
 ### Task: Add: notification service
 
 ### Task: Consume "SnackBar service"
+
+1.TBD
+
+### Task: Dark Theme
+
+1. Video Ref: <https://www.youtube.com/watch?v=r6Ygw9L55zg>
+2. TBD
+
+## Kanban Task: Add methods - List, Delete, Edit, Add for DEALS
+
+1. TBD
