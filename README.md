@@ -239,3 +239,4 @@ Task: Setup MongoDb enviroment path
 ## Kanban Task: HTTP Interceptor + Material Progress Loader
 
 1. Video Ref <https://www.youtube.com/watch?v=o12iI18l1wI>
+2. Add mat progress spinner

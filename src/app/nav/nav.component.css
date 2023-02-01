@@ -15,3 +15,9 @@
   top: 0;
   z-index: 1;
 }
+
+.loader-container {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
