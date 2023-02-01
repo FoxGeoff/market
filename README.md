@@ -235,3 +235,7 @@ Task: Setup MongoDb enviroment path
 ## Kanban Task: Add methods - List, Delete, Edit, Add for DEALS
 
 1. TBD
+
+## Kanban Task: HTTP Interceptor + Material Progress Loader
+
+1. Video Ref <https://www.youtube.com/watch?v=o12iI18l1wI>
