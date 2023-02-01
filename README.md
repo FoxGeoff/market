@@ -215,3 +215,8 @@ Task: Setup MongoDb enviroment path
 7. check in Compass: 'mongodb://localhost:27017'
 
 ## Market App: Angular => Express => MongoDB DONE
+
+## KanBan Task: Stylized custom notification in Angular [#4] | Snackbar component of Material library | Multi-color
+
+1. Video Ref. <https://www.youtube.com/watch?v=gO8rL5iXk-Y>
+
