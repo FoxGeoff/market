@@ -5,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Project introduction
 
 1. code ref: <https://github.com/shaheershukur/Market-Web-Application>
+2. video ref (Schematics): <https://www.youtube.com/watch?v=M5YSPas3qFo>
+3. Online ref (Schematics):<https://tomastrajan.medium.com/total-guide-to-custom-angular-schematics-5c50cf90cdb4>
 
 ### Task: add Material
 
@@ -294,3 +296,5 @@ export class LoaderService {
   constructor() { }
 }
 ```
+
+
