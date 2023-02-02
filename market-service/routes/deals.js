@@ -33,9 +33,7 @@ router.get("/", function (req, res, next) {
    * //change 3000(in miliseconds, 1000ms == 1sec) for testing!
    *
    **/
-
   setTimeout(() => {
-
     dbAbstractionLayer
       .queryDealsCollection()
       .then((response) => {
@@ -44,7 +42,6 @@ router.get("/", function (req, res, next) {
       .catch((error) => {
         res.status(500).json({});
       });
-
   }, 3000);
 });
 

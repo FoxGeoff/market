@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Project introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. code ref: <https://github.com/shaheershukur/Market-Web-Application>
 
 ### Task: add Material
 
@@ -294,4 +294,3 @@ export class LoaderService {
   constructor() { }
 }
 ```
-

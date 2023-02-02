@@ -41,8 +41,10 @@ async function queryDealsCollection() {
     });
 
     return jsonResponse;
+
   } else {
     return null;
   }
+
 }
 module.exports = { queryDealsCollection };

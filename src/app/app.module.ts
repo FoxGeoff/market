@@ -20,6 +20,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressBarModule } from '@angular/material/progress-bar'
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { InterceptorService } from './loader/interceptor.service';
 
 @NgModule({
@@ -43,7 +44,8 @@ import { InterceptorService } from './loader/interceptor.service';
     MatMenuModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}
