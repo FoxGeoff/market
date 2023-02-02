@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. code ref: <https://github.com/shaheershukur/Market-Web-Application>
 2. video ref (Schematics): <https://www.youtube.com/watch?v=M5YSPas3qFo>
 3. Online ref (Schematics):<https://tomastrajan.medium.com/total-guide-to-custom-angular-schematics-5c50cf90cdb4>
+4. Online code ref: <https://github.com/tomastrajan/angular-ngrx-material-starter>
 
 ### Task: add Material
 
