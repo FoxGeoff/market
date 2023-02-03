@@ -298,4 +298,11 @@ export class LoaderService {
 }
 ```
 
+## Kanban Task: CRUD
 
+```html
+    Create (POST) - Make something
+    Read (GET)- Get something
+    Update (PUT) - Change something
+    Delete (DELETE)- Remove something
+```

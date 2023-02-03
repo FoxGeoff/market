@@ -45,6 +45,6 @@ router.get("/", function (req, res, next) {
   }, 3000);
 });
 
-//create a database abstration layer (DAL)
+
 
 module.exports = router;
